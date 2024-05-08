@@ -324,10 +324,7 @@ color: #D08A8A;
         grid-template-columns: repeat(1,384px);
         justify-content: center;
     }
-    .about-items{
-        grid-template-columns: repeat(1,590px);
-        justify-content: center;
-     }
+
      .signup-block{
         justify-content: center;
      }
@@ -352,5 +349,12 @@ color: #D08A8A;
     .signup-form-inputs button.rose-button{
         width: 350px; 
         text-align: center;
+    }
+     .about-items{
+        grid-template-columns: repeat(1,390px);
+        justify-content: center;
+     }
+    .about-items img{
+        max-width: 390px;
     }
 }
