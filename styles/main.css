@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #E5BBBB;
+    font-family:  "Amethysta", sans-serif;
+    color: white;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.common-title{
+    font-family: 'Amethysta', sans-serif;
+    line-height: 100%;
+    font-size: 60px;
+    text-align: center;
+}
+.main{
+    position: relative;
+    overflow: hidden;
+}
+.header{
+    padding: 40px 0;
+}
+.button{
+    border-radius: 60px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #E5BBBB;
+    background-color: white;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 307px;
+    height: 58px;
+    font-size: 18px;
+    padding: 18px 53px;
+}
+.button:hover{
+    background-color: #EEEEEE;
+}
+.rose-button{
+    background-color: #D08A8A;
+    color: white;
+}
+.button.rose-button:hover{
+    background-color: #bc8888;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+}
+
+.menu-list{
+    list-style: none;
+    display: flex;
+    gap: 59px;
+}
+.menu-item a{
+    font-size: 16px;
+    line-height: 130%;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.menu-item a:hover{
+    border-bottom: 2px solid white;
+}
+.main-content{
+    padding-top: 158px;
+    padding-bottom: 158px;
+}
+.main-info{
+    max-width: 660px;
+}
+.main-title{
+    line-height: 100%;
+    font-size: 90px;
+    text-decoration: none;
+    font-family: 'Amethysta', sans-serif;
+    margin-bottom: 7px;
+}
+.main-text{
+    line-height: 130%;
+    font-size: 18px;
+    max-width: 641px;
+    margin-bottom: 19px;
+}
+.line1{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: calc(100% - 960px);
+}
+
+.main-image{
+    position: absolute;
+    top:155px;
+    right: 0;
+    z-index: -1;
+    margin-right: 170px;
+    max-width: 398px;
+    max-height: 511px;
+}
+.rectangle{
+    position: absolute;
+    top:135px;
+    right: 0;
+    z-index: -1;
+    margin-right: 150px;
+    max-width: 438px;
+    height: 531px;
+}
+.services{
+    padding: 70px 0;
+    position: relative;
+    background-color: #D08A8A;
+}
+.services-items{
+    display: grid;
+    grid-template-columns: repeat(3,384px);
+    gap: 90px 24px;
+    margin-top: 110px;
+}
+.service{
+    background-color: white;
+    color: #D08A8A;
+
+ }
+ .services-item-image{
+    height: 202px;
+    text-align: center ;
+ }
+ .services-item-image img{
+    height: 272px;
+    top: -70px;
+    position: relative;
+    max-width: 100%;
+ }
+ .services-item-details{
+    padding: 24px;
+ }
+ .service-title{
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+ }
+ .services-item-text{
+    font-size: 14px;
+    line-height: 120%;
+    margin-bottom: 10px;
+ }
+ .about{
+    padding: 70px 0;
+    position: relative;
+ }
+ .about-items{
+    display: grid;
+    grid-template-columns: repeat(2,590px);
+    gap: 47px 24px;
+    margin-top: 69px;
+ }
+ .about-item{
+max-width: 590px;
+color: #D08A8A;
+ }
+ .about-item-white{
+    background-color: white;
+ }
+.about-item-title{
+    font-size: 24px;
+    line-height: 110%;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 32px;
+}
+.about-item-text{
+    font-size: 18px;
+    line-height: 130%;
+    padding-left: 49px;
+}
+.signup{
+    padding: 70px 0;
+    position: relative;
+    background-color: #D08A8A;
+}
+.signup-block{
+    margin-top: 69px;
+    background-color: rgb(255 255 255/30%);
+    backdrop-filter: blur(50px);
+    display: flex;
+}
+.signup-form{
+    margin-left: 200px;
+    max-width: 387px;
+    padding: 40px 0 44px 0;
+    box-sizing: border-box;
+}
+.signup-form-text{
+    max-width: 387px;
+    font-size: 18px;
+    line-height: 130%;
+}
+.signup-form-inputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.signup-form-inputs input{
+    border: 1px solid white;
+    border-radius: 60px;
+    margin-bottom: 16px;
+    padding: 24px 22px;
+    font-size: 18px;
+    width: 385px;
+    height: 68px;
+    background: transparent;
+    box-sizing: border-box;
+    outline: none;
+    color: white;
+}
+::placeholder{
+    color: rgba(255,255,255,0.4);
+}
+.signup-form-inputs button.rose-button{
+    width: 387px;
+    height: 71px; 
+}
+.signup-block-image{
+    height: 501px;
+    margin-left: 109px;
+}
+.signup-image {
+    height: 462px;
+    width: 428px;
+    padding-top:20px;
+    position: relative;
+}
+.signup-bg-image{
+    position: absolute;
+    right: calc(100% - 810px);
+    top:0;
+    z-index: -1;
+}
+.footer{
+    background-color: #B55E5E;
+    padding: 10px 0;
+    position: relative;
+}
+.phone{
+    font-family: Almarai, sans-serif;
+    font-size: 25px;
+    margin-bottom: 35px;    
+    margin-top: 35px;
+    text-align: center;
+}
+.email{
+    font-family: Almarai, sans-serif;
+    font-size: 25px;
+    margin-bottom: 35px;
+    text-align: center;
+
+}
+.social-media{
+    font-family: Almarai, sans-serif;
+    font-size: 35px;
+    text-align: center;
+
+}
+@media (max-width: 1199px) {
+    .main-title{
+        justify-content:center; 
+        text-align: center;
+        margin: 0 auto;      
+        margin-bottom: 30px;
+
+    }
+    .main-text{
+        text-align: center;  
+        margin: 0 auto;      
+        margin-bottom: 30px;
+
+    }
+    .main-action{
+        text-align: center;
+        margin: 0 auto;      
+    }
+    .main-info{
+        max-width: 100%;
+
+    }
+    .main-image,
+.rectangle {
+    display: none; /* Скрываем изображения */
+}
+    .line1{
+        left:0;
+    }
+
+    .main-content{
+        padding-top: 0px;
+        padding-bottom: 158px;
+    }
+    .menu{
+        justify-content:center; 
+        text-align: center;
+        margin: 0 auto;
+    }
+    .services-items{
+        grid-template-columns: repeat(2,384px);
+        justify-content: center;
+    }
+    .about-items{
+        grid-template-columns: repeat(1,590px);
+        justify-content: center;
+     }
+}
+@media (max-width: 820px) {
+    .services-items{
+        grid-template-columns: repeat(1,384px);
+        justify-content: center;
+    }
+    .about-items{
+        grid-template-columns: repeat(1,590px);
+        justify-content: center;
+     }
+     .signup-block{
+        justify-content: center;
+     }
+    .signup-block-image{
+        display: none;
+    }
+
+    .signup-form{
+        max-width: 350px; 
+        margin-left: 0px;
+       
+     }
+     .signup-form-text{
+        max-width: 350px;
+        margin: 0 auto;
+       text-align: center;
+     }
+     .signup-form-inputs input{
+        width: 350px;
+        text-align: center;
+    }
+    .signup-form-inputs button.rose-button{
+        width: 350px; 
+        text-align: center;
+    }
+}
