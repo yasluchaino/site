@@ -15,24 +15,24 @@ for (let index = 0; index < buttons.length; index++) {
 }
 
 
-const product = document.getElementById("theme");
-const name = document.getElementById("name");
-const phone = document.getElementById("phone");
-document.getElementById("signup-action").onclick = function(){
-    let hasError = false;
-    [product,name,phone].forEach(element => {
-        if (!element.value){
-            element.style.borderColor ="red";
-            hasError = true;
-        } else{
-            element.style.borderColor = "";
-        }
-    });
+document.getElementById("signup-action").addEventListener("click", function() {
+    // Получаем значения полей из формы
+    var theme = document.getElementById("theme").value;
+    var name = document.getElementById("name").value;
+    var other = document.getElementById("other").value;
+    
+   // Проверяем, что все поля заполнены
+   if (theme && name ) {
+    // Формируем текстовое сообщение с информацией из формы
+    var message = "Тема: " + theme + "\nИмя: " + name + "\nДополнительная информация: " + other;
 
-    if (!hasError){
-        [product,name,phone].forEach(element => {
-            element.value = "";
-    });
-    alert("Спасибо за обращение! Я скоро свяжусь с вами!");
-    }
+    // URL для чата в WhatsApp с предзаполненным текстом сообщения
+    var whatsappLink = "https://wa.me/89614608132?text=" + encodeURIComponent(message);
+
+    // Открываем ссылку в новой вкладке
+    window.open(whatsappLink);
+} else {
+    // Выводим сообщение об ошибке или предупреждение, если не все поля заполнены
+    alert("Пожалуйста, заполните все поля формы.");
 }
+});
