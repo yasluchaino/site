@@ -27,7 +27,7 @@ document.getElementById("signup-action").addEventListener("click", function() {
     var message = "Тема: " + theme + "\nИмя: " + name + "\nДополнительная информация: " + other;
 
     // URL для чата в WhatsApp с предзаполненным текстом сообщения
-    var whatsappLink = "https://wa.me/89614608132?text=" + encodeURIComponent(message);
+    var whatsappLink = "https://wa.me/79614608132?text=" + encodeURIComponent(message);
 
     // Открываем ссылку в новой вкладке
     window.open(whatsappLink);
